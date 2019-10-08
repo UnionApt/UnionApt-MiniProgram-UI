@@ -42,7 +42,7 @@ button::after {
 .banner-swiper {
   position: absolute;
   top: 330rpx;
-  height: 45%;
+  height: 600rpx;
   width: 100%;
 }
 
