@@ -8,5 +8,30 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#010101",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/homepage.png",
+        "selectedIconPath": "resources/images/homepage.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/activity.png",
+        "selectedIconPath": "resources/images/activity.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/service.png",
+        "selectedIconPath": "resources/images/service.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/personalInfo.png",
+        "selectedIconPath": "resources/images/personalInfo.png"
+      }
+    ]
+  }
 }

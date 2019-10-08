@@ -1,13 +1,54 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="top-container">
+  <image class="banner-background" src="../../resources/images/banner.png"></image>
+  <button class="appointment-button">
+    <text>预约看房</text>
+  </button>
+  <swiper autoplay="True" class="banner-swiper" indicator-dots="True" interval="5000" indicator-color="#C8C8C8" indicator-active-color="#979797">
+    <swiper-item>
+      <view class="banner-image-container">
+        <image class="banner-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+        <text class="banner-text">悠年公寓,\n让今天变成每一天.</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="banner-image-container">
+        <image class="banner-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+        <text class="banner-text">悠年公寓,\n让今天变成每一天.</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='house-list-title list-title'>
+  <view class='title-left house-list-title'>
+    <text class='location'>LA房源</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='totle-right house-list-title'>
+    <text class='view-more'>查看更多</text>
   </view>
 </view>
+
+<scroll-view class="house-scroll-view" scroll-x="true">
+  <view class="house-image-container">
+    <view class="house-image-view">
+      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+      <text class="house-text-location">BURBANK</text>
+      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
+    </view>
+  </view>
+  <view class="house-image-container">
+    <view class="house-image-view">
+      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+      <text class="house-text-location">BURBANK</text>
+      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
+    </view>
+  </view>
+  <view class="house-image-container">
+    <view class="house-image-view">
+      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+      <text class="house-text-location">BURBANK</text>
+      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
+    </view>
+  </view>
+</scroll-view>

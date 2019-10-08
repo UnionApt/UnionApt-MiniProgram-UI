@@ -1,21 +1,163 @@
 /**index.wxss**/
-.userinfo {
+
+.top-container {
+  width: 100%;
+  height: 950rpx;
+}
+
+.banner-background {
+  width: 110%;
+  height: 620rpx;
+  margin-left: -20rpx;
+  margin-right: -20rpx;
+}
+
+.appointment-button {
+  width: 40%;
+  height: 100rpx;
+  border-radius: 0;
+  border: solid 1px #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 200rpx;
+  left: 30%;
+  right: 30%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-button text {
+  font-family: "Microsoft YaHei";
+  font-size: 17px;
+  font-weight: 290;
+  color: #fff;
+}
+
+button::after {
+  border-radius: 0;
+  border: none;
+}
+
+.banner-swiper {
+  position: absolute;
+  top: 330rpx;
+  height: 45%;
+  width: 100%;
+}
+
+.banner-image {
+  height: 70%;
+  width: 100%;
+  margin-bottom: 20rpx;
+  border-radius: 30rpx;
+  opacity: 0.5;
+}
+
+.banner-text {
+  color: #818181;
+  font-family: "PingFangSC-Medium";
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.banner-image-container {
+  height: 85%;
+  width: 70%;
+  text-align: right;
+}
+
+swiper-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.house-list-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-title {
+  padding: 20rpx;
+  position: relative;
+}
+
+.title-left {
+  flex: 1; /* 重要 */
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.title-right {
+  position: relative;
+  align-items: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.location {
+  font-family: "SFProDisplay-Medium";
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c5c5c;
+  margin-left: 10rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.view-more {
+  font-family: "PingFangSC-Medium";
+  font-size: 12px;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.house-image {
+  height: 65%;
+  width: 100%;
+  margin-bottom: 15rpx;
+  border-radius: 30rpx;
+  opacity: 0.5;
+  box-shadow:0px 2px 5px 5px rgba(150,150,150,0.5);
+}
+
+.house-text-location {
+  color: #d8d8d8;
+  font-family: "Microsoft YaHei";
+  font-size: 10px;
+  font-weight: 290;
+  line-height: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 10rpx;
+}
+
+.house-text-type-price {
+  color: #5c5c5c;
+  font-family: "SFProDisplay-Regular";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.house-image-view {
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.house-image-container {
+  height: 500rpx;
+  width: 260rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display:inline-block;
+}
+
+.house-scroll-view {
+  width: 100%;
+  height: 450rpx;
+  white-space: nowrap;
+  display: flex;
 }
