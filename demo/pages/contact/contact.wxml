@@ -1,0 +1,8 @@
+<image class="banner-background" src="../../resources/images/banner.png"></image>
+
+<view class="QR-container">
+  <view class="QR-background">
+    <image class="QR" src="../../resources/images/QR.png"></image>
+  </view>
+  <text class="QR-message">预约看房或有任何疑问，\n请扫描二维码联络客服.</text>
+</view>
