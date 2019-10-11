@@ -164,7 +164,7 @@ swiper-item {
   position: fixed;
   width: 60rpx;
   height: 60rpx;
-  bottom: 100rpx;
+  bottom: 130rpx;
   right: 35rpx;
 }
 

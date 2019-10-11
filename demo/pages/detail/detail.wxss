@@ -1,0 +1,125 @@
+.room-image-swiper {
+  width: 100%;
+  height: 450rpx;
+}
+
+.room-image {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  margin-top: 50rpx;
+  width: 80%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #6d6150;
+  font-family: "Microsoft YaHei";
+  font-size: 20px;
+  font-weight: 290;
+}
+
+.title-text {
+  margin-top: 20rpx;
+  color: #a0a0a0;
+  font-family: "PingFangSC-Regular";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sub-title {
+  margin-top: 40rpx;
+  color: #363636;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 290;
+}
+
+.sub-title-text {
+  margin-top: 15rpx;
+  color: #a0a0a0;
+  font-family: "PingFangSC-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.service-view {
+  margin-top: 40rpx;
+  width: 100%;
+  height: 400rpx;
+}
+
+.service-image {
+  margin-left: 22rpx;
+  margin-right: 22rpx;
+  margin-bottom: 35rpx;
+  width: 100rpx;
+  height: 80rpx;
+}
+
+.swiper-tab {
+  margin-top: 15rpx;
+  width: 100%;
+  text-align: left;
+  line-height: 60rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  text-align: center;
+  display: inline-block;
+  width: 17%;
+  color: #a0a0a0;
+}
+
+.swiper-tab-content {
+  margin-top: 30rpx;
+  height: 150rpx;
+}
+
+.on {
+  color: #777;
+  border-bottom: 5rpx solid #777;
+}
+
+.swiper-item-room-type {
+  height: 170rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.room-area-price {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-area-price-text {
+  color: #828282;
+  font-family: "PingFangSC-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+
+.room-topview {
+  margin-left: 40rpx;
+  width: 50%;
+  height: 100%;
+}
