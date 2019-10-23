@@ -60,8 +60,8 @@ button::after {
 }
 
 .banner-image-container {
-  height: 85%;
-  width: 70%;
+  height: 88%;
+  width: 76%;
   text-align: right;
 }
 
@@ -145,8 +145,8 @@ swiper-item {
 }
 
 .house-image-container {
-  height: 500rpx;
-  width: 260rpx;
+  height: 450rpx;
+  width: 230rpx;
   margin-top: 10rpx;
   margin-left: 30rpx;
   margin-right: 30rpx;
