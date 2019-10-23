@@ -1,19 +1,17 @@
 <view class="top-container">
-  <image class="banner-background" src="../../resources/images/banner.png"></image>
-  <button class="appointment-button">
+  <image class="banner-background" src="../../resources/images/banner/banner.png"></image>
+  <button class="appointment-button" catchtap='makeAppointment'>
     <text>预约看房</text>
   </button>
+  <view class='region' catchtap='selectRegion'>
+    <text class='region_text'>洛杉矶</text>
+    <image class='region_arrow' src='../../resources/images/region/down.png'></image>
+  </view>
   <swiper autoplay="True" class="banner-swiper" indicator-dots="True" interval="5000" indicator-color="#C8C8C8" indicator-active-color="#979797">
-    <swiper-item>
+    <swiper-item wx:for='{{activities}}' wx:key='this'>
       <view class="banner-image-container">
-        <image class="banner-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-        <text class="banner-text">悠年公寓,\n让今天变成每一天.</text>
-      </view>
-    </swiper-item>
-    <swiper-item>
-      <view class="banner-image-container">
-        <image class="banner-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-        <text class="banner-text">悠年公寓,\n让今天变成每一天.</text>
+        <image class="banner-image" mode="aspectFill" src="{{item.image}}" />
+        <text class="banner-text">{{item.text_1}}\n{{item.text_2}}</text>
       </view>
     </swiper-item>
   </swiper>
@@ -29,33 +27,15 @@
 </view>
 
 <scroll-view class="house-scroll-view" scroll-x="true">
-  <view class="house-image-container">
-    <view class="house-image-view">
-      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-      <text class="house-text-location">BURBANK</text>
-      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
-    </view>
-  </view>
-  <view class="house-image-container">
-    <view class="house-image-view">
-      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-      <text class="house-text-location">BURBANK</text>
-      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
-    </view>
-  </view>
-  <view class="house-image-container">
-    <view class="house-image-view">
-      <image class="house-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-      <text class="house-text-location">BURBANK</text>
-      <text class="house-text-type-price">3B3B 1500 USD/月 起</text>
+  <view class="house-image-container" wx:for='{{apartments}}' wx:key='this'>
+    <view class="house-image-view" catchtap="viewApartmentDetail" data-_id='{{item._id}}'>
+      <image class="house-image" mode="aspectFill" src="{{item.image}}" />
+      <text class="house-text-location">{{item.subregion}}</text>
+      <text class="house-text-type-price">{{item.min_price}} USD/月 起</text>
     </view>
   </view>
 </scroll-view>
 
 <view>
-  <image class="contact" src="../../resources/images/contact.png"></image>
-</view>
-
-<view>
-  <image class="share" src="../../resources/images/share.png"></image>
+  <image class="contact" catchtap="makeAppointment" src="../../resources/images/contact/contact.png"></image>
 </view>

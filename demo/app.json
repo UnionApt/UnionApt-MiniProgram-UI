@@ -16,23 +16,23 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "resources/images/homepage.png",
-        "selectedIconPath": "resources/images/homepage.png"
+        "iconPath": "resources/images/tab/homepage.png",
+        "selectedIconPath": "resources/images/tab/homepage.png"
       },
       {
-        "pagePath": "pages/contact/contact",
-        "iconPath": "resources/images/activity.png",
-        "selectedIconPath": "resources/images/activity.png"
-      },
-      {
-        "pagePath": "pages/detail/detail",
-        "iconPath": "resources/images/service.png",
-        "selectedIconPath": "resources/images/service.png"
+        "pagePath": "pages/index/index",        
+        "iconPath": "resources/images/tab/activity.png",
+        "selectedIconPath": "resources/images/tab/activity.png"
       },
       {
         "pagePath": "pages/index/index",
-        "iconPath": "resources/images/personalInfo.png",
-        "selectedIconPath": "resources/images/personalInfo.png"
+        "iconPath": "resources/images/tab/service.png",
+        "selectedIconPath": "resources/images/tab/service.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/tab/personalInfo.png",
+        "selectedIconPath": "resources/images/tab/personalInfo.png"
       }
     ]
   }

@@ -1,61 +1,49 @@
 <swiper autoplay="True" class="room-image-swiper" indicator-dots="True" interval="2000">
-  <swiper-item>
-    <image class="room-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
-  </swiper-item>
-  <swiper-item>
-    <image class="room-image" mode="aspectFill" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy" />
+  <swiper-item wx:for='{{apartmentDetail.inner_banner}}' wx:key='this'>
+    <image class="room-image" mode="aspectFill" src="{{item}}" />
   </swiper-item>
 </swiper>
 
 <view class="intro-container">
   <view class="intro-text">
-    <text class="title">悠年·浮世</text>
-    <text class="title-text">超大独立空间，5分钟到USC</text>
+    <text class="title">{{apartmentDetail.name}}</text>
+    <text class="title-text">{{apartmentDetail.slogan}}</text>
     <text class="sub-title">房型选择</text>
     <view class="swiper-tab">
-      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">2B2B</view>
-      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">3B3B</view>
+      <view class="swiper-tab-list {{currentTab==curIndex ? 'on' : ''}}" data-current="{{curIndex}}" bindtap="swichNav" wx:for='{{apartmentDetail.layout}}' wx:for-index='curIndex' wx:key='this'>{{item[0]}}</view>
     </view>
     <swiper class="swiper-tab-content" current="{{currentTab}}">
-      <swiper-item class="swiper-item-room-type" catchtouchmove="stopTouchMove">
+      <swiper-item class="swiper-item-room-type" catchtouchmove="stopTouchMove" wx:for='{{apartmentDetail.layout}}' wx:key='this'>
         <view class="room-area-price">
-          <text class="room-area-price-text">面积：120m2</text>
-          <text class="room-area-price-text">整租：5000$</text>
-          <text class="room-area-price-text">单间：2500$</text>
+          <text class="room-area-price-text">面积：{{item[1]}}m2</text>
+          <text class="room-area-price-text">整租：{{item[2]}}$</text>
+          <text class="room-area-price-text">单间：{{item[3]}}$</text>
         </view>
-        <image class="room-topview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy"></image>
-      </swiper-item>
-      <swiper-item class="swiper-item-room-type" catchtouchmove="stopTouchMove">
-        <view class="room-area-price">
-          <text class="room-area-price-text">面积：120m2</text>
-          <text class="room-area-price-text">整租：5000$</text>
-          <text class="room-area-price-text">单间：2500$</text>
-        </view>
-        <image class="room-topview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTknF-3DGc2GQUIeEoapyXGg9EJevhQLrjdKNlYaKr4vir7VKAy"></image>
+        <image class="room-topview" src="{{item[4]}}"></image>
       </swiper-item>
     </swiper>
     <text class="sub-title">公寓描述</text>
-    <text class="sub-title-text">悠年•浮世全部为120㎡的独立公寓，坐享独立厨房和独立阳台，对外采光，让你每天都有明媚好心情。室内设计采用日系风格，全新木地板，空间宽敞，附有家具配套，还支持养宠物。同时，悠年•浮世还坐拥绝佳地理位置，开5分钟到美食环绕的Sawtelle，10分钟到Santa Monica College，15分钟到UCLA，是留学生绝佳选择。</text>
+    <text class="sub-title-text">{{apartmentDetail.description}}</text>
     <text class="sub-title">支付方式</text>
-    <text class="sub-title-text">一年起租 l 免中介费</text>
+    <text class="sub-title-text">{{apartmentDetail.payment}}</text>
     <text class="sub-title">家具家电</text>
-    <text class="sub-title-text">空调 l 热水器 l 床 l 床垫 l 沙发 l 茶几</text>
+    <text class="sub-title-text">{{apartmentDetail.furnitures}}</text>
     <text class="sub-title">特色服务</text>
-    <text class="sub-title-text">快递区 l 悠闲区 l 送餐上门</text>
+    <text class="sub-title-text">{{apartmentDetail.services}}</text>
     <text class="sub-title">周边生活</text>
-    <text class="sub-title-text">Sawtelle美食夜生活 | 公寓派对</text>
+    <text class="sub-title-text">{{apartmentDetail.near}}</text>
     <text class="sub-title">详细地址</text>
-    <text class="sub-title-text">11785 Gateway Blvd，Los Angeles CA 90064</text>
+    <text class="sub-title-text">{{apartmentDetail.location}}</text>
     <text class="sub-title">配套服务</text>
     <view class="service-view">
-      <image class="service-image" src="../../resources/images/equiped.png"></image>
-      <image class="service-image" src="../../resources/images/wifi.png"></image>
-      <image class="service-image" src="../../resources/images/move.png"></image>
-      <image class="service-image" src="../../resources/images/group.png"></image>
-      <image class="service-image" src="../../resources/images/pet.png"></image>
-      <image class="service-image" src="../../resources/images/24.png"></image>
-      <image class="service-image" src="../../resources/images/chinesedish.png"></image>
-      <image class="service-image" src="../../resources/images/clean.png"></image>
+      <image class="service-image" src="../../resources/images/service/furniture.png"></image>
+      <image class="service-image" src="../../resources/images/service/wifi.png"></image>
+      <image class="service-image" src="../../resources/images/service/move.png"></image>
+      <image class="service-image" src="../../resources/images/service/group.png"></image>
+      <image class="service-image" src="../../resources/images/service/pet.png"></image>
+      <image class="service-image" src="../../resources/images/service/24.png"></image>
+      <image class="service-image" src="../../resources/images/service/chinesedish.png"></image>
+      <image class="service-image" src="../../resources/images/service/clean.png"></image>
     </view>
   </view>
 </view>

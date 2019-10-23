@@ -68,7 +68,7 @@
   margin-right: 22rpx;
   margin-bottom: 35rpx;
   width: 100rpx;
-  height: 80rpx;
+  height: 110rpx;
 }
 
 .swiper-tab {
@@ -88,7 +88,7 @@
 
 .swiper-tab-content {
   margin-top: 30rpx;
-  height: 150rpx;
+  height: 190rpx;
 }
 
 .on {
@@ -97,7 +97,7 @@
 }
 
 .swiper-item-room-type {
-  height: 170rpx;
+  height: 190rpx;
   display: flex;
   flex-direction: row;
 }
@@ -119,7 +119,7 @@
 }
 
 .room-topview {
-  margin-left: 40rpx;
-  width: 50%;
+  margin-left: 60rpx;
+  width: 40%;
   height: 100%;
 }

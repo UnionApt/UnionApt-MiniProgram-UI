@@ -49,7 +49,7 @@ button::after {
   width: 100%;
   margin-bottom: 20rpx;
   border-radius: 30rpx;
-  opacity: 0.5;
+  opacity: 0.95;
 }
 
 .banner-text {
@@ -111,10 +111,10 @@ swiper-item {
 .house-image {
   height: 65%;
   width: 100%;
-  margin-bottom: 15rpx;
+  margin-bottom: 25rpx;
   border-radius: 30rpx;
-  opacity: 0.5;
-  box-shadow: 0px 2px 5px 5px rgba(150, 150, 150, 0.5);
+  opacity: 0.75;
+  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
 }
 
 .house-text-location {
@@ -164,14 +164,33 @@ swiper-item {
   position: fixed;
   width: 60rpx;
   height: 60rpx;
-  bottom: 130rpx;
+  bottom: 50rpx;
   right: 35rpx;
 }
 
-.share {
-  position: fixed;
-  width: 60rpx;
-  height: 60rpx;
-  bottom: 40rpx;
-  right: 35rpx;
+.region {
+  position: absolute;
+  top: 50rpx;
+  left: 30rpx;
+  width: 200rpx;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 25rpx;
+}
+
+.region_text {
+  color: #fff;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  font-weight: 290;
+  line-height: 21px;
+  letter-spacing: 1.15px;
+}
+
+.region_arrow {
+  width: 40rpx;
+  height: 30rpx;
+  display: block;
+  opacity: 0.6;
 }
