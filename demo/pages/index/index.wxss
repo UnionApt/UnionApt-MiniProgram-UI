@@ -4,10 +4,8 @@
 }
 
 .banner-background {
-  width: 110%;
+  width: 100%;
   height: 620rpx;
-  margin-left: -20rpx;
-  margin-right: -20rpx;
 }
 
 .appointment-button {
@@ -118,10 +116,10 @@ swiper-item {
 }
 
 .house-text-location {
-  color: #d8d8d8;
+  color: #b8b6b6;
   font-family: "Microsoft YaHei";
   font-size: 10px;
-  font-weight: 290;
+  font-weight: 500;
   line-height: 11px;
   letter-spacing: 1px;
   margin-bottom: 10rpx;
@@ -162,8 +160,8 @@ swiper-item {
 
 .contact {
   position: fixed;
-  width: 60rpx;
-  height: 60rpx;
+  width:80rpx;
+  height: 80rpx;
   bottom: 50rpx;
   right: 35rpx;
 }

@@ -1,8 +1,6 @@
 .banner-background {
-  width: 110%;
+  width: 100%;
   height: 620rpx;
-  margin-left: -20rpx;
-  margin-right: -20rpx;
 }
 
 .QR-container {
