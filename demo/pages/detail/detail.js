@@ -25,6 +25,17 @@ Page({
       }
     })
 
+    wx.showToast({
+      title: '下载海报中',  //标题
+      icon: 'loading',  //图标，支持"success"、"loading"
+      image: '',  //自定义图标的本地路径，image 的优先级高于 icon
+      duration: 5000, //提示的延迟时间，单位毫秒，默认：1500
+      mask: false,  //是否显示透明蒙层，防止触摸穿透，默认：false
+      success: function () { }, //接口调用成功的回调函数
+      fail: function () { },  //接口调用失败的回调函数
+      complete: function () { } //接口调用结束的回调函数
+    })
+
     //文件下载
     var imgSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJjQM10tLcTErnKQb9XaYnm813S8_rwlI0vqMX1qVIoGKoIXg7g&s"
     wx.downloadFile({
@@ -36,6 +47,7 @@ Page({
           filePath: res.tempFilePath,
           success: function(data) {
             console.log(data);
+            wx.hideToast();
             wx.showToast({
               title: '已下载海报到相册',  //标题
               icon: 'success',  //图标，支持"success"、"loading"
