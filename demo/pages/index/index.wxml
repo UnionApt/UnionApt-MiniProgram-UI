@@ -10,7 +10,7 @@
       <text class="appointment-text">预约看房</text>
     </view>
   </view>
-  <view class="slogan-view">
+  <view class="slogan-view weui-animate-fade-in" >
     <text class="slogan">很高兴遇见你</text>
     <text class="slogan-sub">——悠年公寓</text>
   </view>

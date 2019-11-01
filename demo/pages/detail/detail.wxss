@@ -131,3 +131,11 @@
   bottom: 60rpx;
   right: 60rpx;
 }
+
+.contact {
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 170rpx;
+  right: 60rpx;
+}
