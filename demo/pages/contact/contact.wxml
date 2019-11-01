@@ -1,6 +1,7 @@
 <image class="banner-background" src="../../resources/images/banner/banner.png"></image>
 
 <view class="QR-container">
+  <image class="union-icon" src="../../resources/images/logo/logo.png" mode="widthFix"></image>
   <view class="QR-background">
     <image class="QR" src="{{URL}}public/images/QR_Code.png"></image>
   </view>

@@ -8,7 +8,21 @@ Page({
   data: {
     region: 'LA',
     activities: [],
-    apartments: []
+    apartments: [],
+    news: []
+  },
+
+  backToTop: function() {
+    if (wx.pageScrollTo) {
+      wx.pageScrollTo({
+        scrollTop: 0
+      })
+    } else {
+      wx.showModal({
+        title: '提示',
+        content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
+      })
+    }
   },
 
   makeAppointment: function() {
@@ -59,12 +73,30 @@ Page({
     })
   },
 
+  getNews: function() {
+    var myThis = this
+    wx.request({
+      url: app.globalData.URL + 'getLatestArticles',
+      method: 'GET',
+      data: {},
+      header: {
+        'Accept': 'application/json'
+      },
+      success: function(res) {
+        myThis.setData({
+          news: res.data
+        });
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
     this.getActivities()
     this.getApartments()
+    this.getNews()
   },
 
   /**

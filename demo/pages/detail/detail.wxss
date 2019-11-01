@@ -123,3 +123,11 @@
   width: 40%;
   height: 100%;
 }
+
+.share {
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 60rpx;
+  right: 60rpx;
+}

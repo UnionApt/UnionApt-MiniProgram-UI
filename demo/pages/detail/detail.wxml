@@ -47,3 +47,5 @@
     </view>
   </view>
 </view>
+
+<image class="share" src="../../resources/images/suspension/share.png"></image>

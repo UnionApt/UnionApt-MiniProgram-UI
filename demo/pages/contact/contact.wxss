@@ -38,3 +38,11 @@
   font-weight: 400;
   line-height: 25px;
 }
+
+.union-icon {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  width: 30%;
+  top: 50rpx;
+}
