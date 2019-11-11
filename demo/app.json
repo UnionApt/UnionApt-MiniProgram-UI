@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/city/city",
     "pages/detail/detail",
-    "pages/contact/contact"
+    "pages/contact/contact",
+    "pages/todo/todo"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,17 +22,17 @@
         "selectedIconPath": "resources/images/tab/home1.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/todo/todo",
         "iconPath": "resources/images/tab/activity0.png",
         "selectedIconPath": "resources/images/tab/activity1.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/todo/todo",
         "iconPath": "resources/images/tab/service0.png",
         "selectedIconPath": "resources/images/tab/service1.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/todo/todo",
         "iconPath": "resources/images/tab/personal0.png",
         "selectedIconPath": "resources/images/tab/personal1.png"
       }

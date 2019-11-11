@@ -1,0 +1,20 @@
+/* pages/todo/todo.wxss */
+
+.todo-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200rpx;
+}
+
+.egg {
+  width: 400rpx;
+  height: 300rpx;
+  margin-bottom: 100rpx;
+}
+
+.text {
+  width: 400rpx;
+  height: 110rpx;
+}

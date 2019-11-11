@@ -1,0 +1,5 @@
+<!--pages/todo/todo.wxml-->
+<view class="todo-view">
+  <image class="egg" src="../../resources/images/todo/egg.gif"></image>
+  <image class="text" src="../../resources/images/todo/text.png"></image>
+</view>
