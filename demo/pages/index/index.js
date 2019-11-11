@@ -12,6 +12,12 @@ Page({
     news: []
   },
 
+  selectRegion: function () {
+    wx.navigateTo({
+      url: '../city/city',
+    })
+  },
+
   backToTop: function() {
     if (wx.pageScrollTo) {
       wx.pageScrollTo({
@@ -30,8 +36,6 @@ Page({
       url: '../contact/contact',
     })
   },
-
-  selectRegion: function() {},
 
   viewApartmentDetail: function(e) {
     wx.navigateTo({

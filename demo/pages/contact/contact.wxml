@@ -1,7 +1,11 @@
 <image class="banner-background" src="../../resources/images/banner/banner.png"></image>
 
 <view class="QR-container">
-  <image class="union-icon" src="../../resources/images/logo/logo.png" mode="widthFix"></image>
+  <image class="union-icon" src="../../resources/images/logo/logo.png"></image>
+  <view class="slogan-view weui-animate-fade-in">
+    <text class="slogan">欢迎咨询入住</text>
+    <text class="slogan-sub">——悠年公寓居委会</text>
+  </view>
   <view class="QR-background">
     <image class="QR" src="{{URL}}public/images/QR_Code.png"></image>
   </view>

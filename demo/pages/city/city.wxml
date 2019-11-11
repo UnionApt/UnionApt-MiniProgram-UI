@@ -1,0 +1,29 @@
+<!--pages/city/city.wxml-->
+<view class="city-view-container">
+  <view class="city-view">
+    <text class="popular-city-title">热门城市</text>
+    <view class="popular-city-list">
+      <view class="city-text-view">
+        <view class="city-text-boarder">
+          <text class="city-text">纽约市</text>
+        </view>
+      </view>
+      <view class="city-text-view">
+        <view class="city-text-boarder">
+          <text class="city-text">三藩市</text>
+        </view>
+      </view>
+      <view class="city-text-view">
+        <view class="city-text-boarder">
+          <text class="city-text">尔湾</text>
+        </view>
+      </view>
+      <view class="city-text-view">
+        <view class="city-text-boarder">
+          <text class="city-text">洛杉矶</text>
+        </view>
+      </view>
+    </view>
+    <text class="more-city-title">更多城市</text>
+  </view>
+</view>

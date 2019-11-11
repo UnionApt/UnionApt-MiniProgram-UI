@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/city/city",
     "pages/detail/detail",
     "pages/contact/contact"
   ],
@@ -16,23 +17,23 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "resources/images/tab/homepage.png",
-        "selectedIconPath": "resources/images/tab/homepage.png"
-      },
-      {
-        "pagePath": "pages/index/index",        
-        "iconPath": "resources/images/tab/activity.png",
-        "selectedIconPath": "resources/images/tab/activity.png"
+        "iconPath": "resources/images/tab/home0.png",
+        "selectedIconPath": "resources/images/tab/home1.png"
       },
       {
         "pagePath": "pages/index/index",
-        "iconPath": "resources/images/tab/service.png",
-        "selectedIconPath": "resources/images/tab/service.png"
+        "iconPath": "resources/images/tab/activity0.png",
+        "selectedIconPath": "resources/images/tab/activity1.png"
       },
       {
         "pagePath": "pages/index/index",
-        "iconPath": "resources/images/tab/personalInfo.png",
-        "selectedIconPath": "resources/images/tab/personalInfo.png"
+        "iconPath": "resources/images/tab/service0.png",
+        "selectedIconPath": "resources/images/tab/service1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resources/images/tab/personal0.png",
+        "selectedIconPath": "resources/images/tab/personal1.png"
       }
     ]
   }
