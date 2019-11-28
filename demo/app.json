@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/activity/activity",
     "pages/index/index",
     "pages/city/city",
     "pages/detail/detail",
@@ -22,7 +23,7 @@
         "selectedIconPath": "resources/images/tab/home1.png"
       },
       {
-        "pagePath": "pages/todo/todo",
+        "pagePath": "pages/activity/activity",
         "iconPath": "resources/images/tab/activity0.png",
         "selectedIconPath": "resources/images/tab/activity1.png"
       },

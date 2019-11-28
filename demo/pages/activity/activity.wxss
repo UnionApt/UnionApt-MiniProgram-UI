@@ -1,0 +1,161 @@
+/* pages/activity/activity.wxss */
+
+.top-container {
+  width: 100%;
+  height: 1200rpx;
+}
+
+.background {
+  width: 100%;
+}
+
+.union-icon-view {
+  position: absolute;
+  width: 100%;
+  top: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.union-icon {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.banner-swiper {
+  position: absolute;
+  top: 380rpx;
+  height: 800rpx;
+  width: 100%;
+}
+
+.banner-image-container {
+  height: 90%;
+  width: 80%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-image {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 20rpx;
+  border-radius: 30rpx;
+  opacity: 0.95;
+}
+
+.banner-text-sign-up {
+  color: #363434;
+  font-family: "PingFangSC-Medium";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: right;
+  margin-bottom: 10rpx;
+}
+
+.banner-text-intro {
+  height: 19px;
+  color: #c0c0c0;
+  font-family: "PingFangTC-Medium";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: right;
+}
+
+swiper-item {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mid-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pre-view {
+  width: 90%;
+}
+
+.pre-view-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pre-view-title-img1 {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.pre-view-title-img2 {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.pre-view-title-text {
+  color: #bababa;
+  font-family: "PingFangSC-Medium";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.pre-view-content {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.pre-activity-time {
+  color: #c0c0c0;
+  font-family: "SFProDisplay-Medium";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 1px;
+}
+
+.pre-activity-view {
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
+  border-radius: 10rpx;
+}
+
+.pre-activity-image {
+  width: 100%;
+}
+
+.pre-activity-title {
+  color: #363434;
+  font-family: "PingFangSC-Regular";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+}
+
+.pre-activity-intro {
+  color: #828282;
+  font-family: "PingFangSC-Regular";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 40rpx;
+}
