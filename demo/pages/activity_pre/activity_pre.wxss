@@ -1,0 +1,114 @@
+/* pages/activity_pre/activity_pre.wxss */
+
+.activity-image-swiper {
+  width: 100%;
+  height: 450rpx;
+}
+
+.activity-image {
+  width: 100%;
+  height: 100%;
+}
+
+.intro-container {
+  width: 95%;
+  margin-left: 5%;
+  margin-top: 50rpx;
+}
+
+.activity-title {
+  color: #363636;
+  font-family: "PingFangSC-Medium";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.activity-intro-view {
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.activity-intro-background {
+  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-intro-text {
+  color: #5a5a5a;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: 290;
+  line-height: 21px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.pre-icon {
+  height: 100%;
+  margin-left: 50rpx;
+}
+
+.activity-intro-container {
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.activity-intro-subview {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+
+.activity-intro-subview-icon {
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 20rpx;
+}
+
+.activity-intro-text-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-intro-subtitle {
+  color: #969696;
+  font-family: "PingFangSC-Medium";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10rpx;
+}
+
+.activity-intro-subtext {
+  width: 90%;
+  color: #484848;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: 290;
+  line-height: 21px;
+  margin-top: 20rpx;
+}
+
+.pre-activity-image-swiper {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+.pre-activity-image-box {
+  width: 95%;
+}
+
+.pre-activity-image {
+  width: 100%;
+}

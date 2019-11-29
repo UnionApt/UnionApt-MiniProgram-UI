@@ -25,9 +25,9 @@
 <view class="mid-container">
   <view class="pre-view">
     <view class="pre-view-title">
-      <image class="pre-view-title-img1" src="../../resources/images/pre/Triangle.png"></image>
+      <image class="pre-view-title-img1" src="../../resources/images/activity/Triangle.png"></image>
       <text class="pre-view-title-text">精彩回顾</text>
-      <image class="pre-view-title-img2" src="../../resources/images/pre/VolumeSymbol.png"></image>
+      <image class="pre-view-title-img2" src="../../resources/images/activity/VolumeSymbol.png"></image>
     </view>
     <view class="pre-view-content">
       <text class="pre-activity-time">SEPT 13</text>

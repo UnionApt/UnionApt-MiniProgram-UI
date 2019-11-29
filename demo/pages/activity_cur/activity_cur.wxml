@@ -1,0 +1,70 @@
+<!--pages/activity_cur/activity_cur.wxml-->
+<swiper autoplay="True" class="activity-image-swiper" indicator-dots="True" interval="2000">
+  <swiper-item>
+    <image class="activity-image" mode="aspectFill" src="../../resources/images/tmp/ac1.png" />
+  </swiper-item>
+  <swiper-item>
+    <image class="activity-image" mode="aspectFill" src="../../resources/images/tmp/ac2.png" />
+  </swiper-item>
+</swiper>
+
+<view class="intro-container">
+  <text class="activity-title">中秋百家宴</text>
+  <view class="activity-intro-view">
+    <view class="activity-intro-background">
+      <text class="activity-intro-text">中秋节是阖家团圆的日子，身在海外的同学们没有机会与家人团聚，悠年公寓暖心服务，既有家常菜和月饼，还有天台赏月活动。</text>
+    </view>
+    <image class="cur-icon" mode="widthFix" src="../../resources/images/activity/cur.png"></image>
+  </view>
+
+  <view class="activity-intro-container">
+    <view class="activity-intro-subview">
+      <image class="activity-intro-subview-icon" src="../../resources/images/activity/location.png"></image>
+      <view class="activity-intro-text-view">
+        <text class="activity-intro-subtitle">活动地点</text>
+        <text class="activity-intro-subtext">601, 3482 San Marino St, Los Angeles, CA 90006</text>
+      </view>
+    </view>
+
+    <view class="activity-intro-subview">
+      <image class="activity-intro-subview-icon" src="../../resources/images/activity/time.png"></image>
+      <view class="activity-intro-text-view">
+        <text class="activity-intro-subtitle">活动时间</text>
+        <text class="activity-intro-subtext">2019年9月13日 晚7点开始</text>
+      </view>
+    </view>
+
+    <view class="activity-intro-subview">
+      <image class="activity-intro-subview-icon" src="../../resources/images/activity/GroupOriented.png"></image>
+      <view class="activity-intro-text-view">
+        <text class="activity-intro-subtitle">面向群体</text>
+        <text class="activity-intro-subtext">悠年社区成员</text>
+      </view>
+    </view>
+
+    <view class="activity-intro-subview">
+      <image class="activity-intro-subview-icon" src="../../resources/images/activity/price.png"></image>
+      <view class="activity-intro-text-view">
+        <text class="activity-intro-subtitle">入场票价</text>
+        <text class="activity-intro-subtext">免费</text>
+      </view>
+    </view>
+
+    <view class="activity-intro-subview">
+      <image class="activity-intro-subview-icon" src="../../resources/images/activity/group.png"></image>
+      <view class="activity-intro-text-view">
+        <text class="activity-intro-subtitle">申请进群</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="group-QR-view">
+  <view class="group-QR-border">
+    <image class="group-QR" src="../../resources/images/tmp/ac-QR.png"></image>
+  </view>
+</view>
+
+<view class="button-view">
+  <button class="sign-up-button">我要报名</button>
+</view>

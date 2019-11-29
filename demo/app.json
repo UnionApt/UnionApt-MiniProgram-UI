@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/activity_form/activity_form",
+    "pages/activity_cur/activity_cur",
+    "pages/activity_res/activity_res",
+    "pages/activity_pre/activity_pre",
     "pages/activity/activity",
     "pages/index/index",
     "pages/city/city",

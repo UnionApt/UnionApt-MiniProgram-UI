@@ -1,0 +1,31 @@
+/* pages/activity_res/activity_res.wxss */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 60%;
+  margin-bottom: 50rpx;
+}
+
+.txt {
+  color: #111111;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  font-weight: 290;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+
+.btn {
+  width: 70%;
+  border-radius: 21px;
+  background: #98afc2;
+  color: #fff;
+  box-shadow: 0px 2px4px rgba(156, 156, 156, 0.5);
+  margin-top: 50rpx;
+}
