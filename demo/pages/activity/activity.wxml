@@ -5,18 +5,11 @@
     <image class="union-icon" src="../../resources/images/logo/logo.png"></image>
   </view>
   <swiper autoplay="True" class="banner-swiper" indicator-dots="True" interval="5000" indicator-color="#C8C8C8" indicator-active-color="#979797" previous-margin='50px' next-margin='50px'>
-    <swiper-item>
+    <swiper-item wx:for='{{curEvents}}' wx:key='this'>
       <view class="banner-image-container">
-        <image class="banner-image" mode="aspectFill" src="../../resources/images/tmp/upcomingevent01.png" />
-        <text class="banner-text-sign-up">点击报名</text>
-        <text class="banner-text-intro">"去你妈的光棍节"</text>
-      </view>
-    </swiper-item>
-    <swiper-item>
-      <view class="banner-image-container">
-        <image class="banner-image" mode="aspectFill" src="../../resources/images/tmp/upcomingevent02.png" />
-        <text class="banner-text-sign-up">点击报名</text>
-        <text class="banner-text-intro">"去你妈的光棍节"</text>
+        <image class="banner-image" mode="aspectFill" src="{{item.poster}}" catchtap="viewCurEventDetail" data-_id='{{item._id}}' />
+        <text class="banner-text-sign-up" catchtap="viewCurEventDetail" data-_id='{{item._id}}'>点击报名</text>
+        <text class="banner-text-intro">{{item.title}}</text>
       </view>
     </swiper-item>
   </swiper>
@@ -29,20 +22,12 @@
       <text class="pre-view-title-text">精彩回顾</text>
       <image class="pre-view-title-img2" src="../../resources/images/activity/VolumeSymbol.png"></image>
     </view>
-    <view class="pre-view-content">
-      <text class="pre-activity-time">SEPT 13</text>
+    <view class="pre-view-content" wx:for='{{preEvents}}' wx:key='this' catchtap="viewPreEventDetail" data-_id='{{item._id}}'>
+      <text class="pre-activity-time">{{item.date_abbr}}</text>
       <view class="pre-activity-view">
-        <image class="pre-activity-image" mode="widthFix" src="../../resources/images/tmp/ac1.png"></image>
-        <text class="pre-activity-title">中秋百家宴——悠年与你团圆过中秋</text>
-        <text class="pre-activity-intro">送你一块月饼，再送你一个圆圆的月亮</text>
-      </view>
-    </view>
-    <view class="pre-view-content">
-      <text class="pre-activity-time">SEPT 13</text>
-      <view class="pre-activity-view">
-        <image class="pre-activity-image" mode="widthFix" src="../../resources/images/tmp/ac2.png"></image>
-        <text class="pre-activity-title">中秋百家宴——悠年与你团圆过中秋</text>
-        <text class="pre-activity-intro">送你一块月饼，再送你一个圆圆的月亮</text>
+        <image class="pre-activity-image" mode="widthFix" src="{{item.cover}}"></image>
+        <text class="pre-activity-title">{{item.title}}</text>
+        <text class="pre-activity-intro">{{item.intro}}</text>
       </view>
     </view>
   </view>
