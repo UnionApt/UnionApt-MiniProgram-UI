@@ -11,6 +11,12 @@ Page({
     eventDetail: ''
   },
 
+  signUp: function (e) {
+    wx.navigateTo({
+      url: '../activity_form/activity_form?_id=' + this.data.id
+    })
+  },
+
   getEventDetail: function(id) {
     var myThis = this
     wx.request({

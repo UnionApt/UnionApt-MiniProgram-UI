@@ -54,6 +54,7 @@ Component({
         nowText: nowText,
         animationData: this.animation.export()
       })
+      this.triggerEvent('myget', nowText)
     }
   }
 })

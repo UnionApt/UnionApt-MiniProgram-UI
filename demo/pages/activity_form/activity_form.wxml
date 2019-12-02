@@ -5,61 +5,62 @@
 
 <view class="content-container">
   <view class="content-view">
-    <text class="sub-title-text">姓名（或昵称）*</text>
-    <input class="center input-name"></input>
-    <text class="sub-title-text">性别*</text>
-    <radio-group class="center input-gender">
-      <label class="sub-text gender-choice">
-        <radio/>男</label>
-      <label class="sub-text gender-choice">
-        <radio/>女</label>
-      <label class="sub-text gender-choice">
-        <radio/>不愿意透露或其他</label>
-    </radio-group>
-    <text class="sub-title-text">年龄*</text>
-    <radio-group class="center input-age">
-      <label class="sub-text age-choice">
-        <radio/>21周岁以下</label>
-      <label class="sub-text age-choice">
-        <radio/>21周岁以上</label>
-    </radio-group>
-    <text class="sub-title-text">身份*</text>
-    <checkbox-group class="center input-identity">
-      <label class="sub-text identity-choice">
-        <checkbox/>悠年社区成员</label>
-      <label class="sub-text identity-choice">
-        <checkbox/>在校学生</label>
-      <label class="sub-text identity-choice">
-        <checkbox/>上班族</label>
-      <label class="sub-text identity-choice">
-        <checkbox/>自由职业者</label>
-      <label class="sub-text identity-choice">
-        <checkbox/>其他</label>
-    </checkbox-group>
-    <text class="sub-title-text">请问您就读于（或最近曾就读）于以下哪所学校？</text>
-    <view class="center">
-      <select prop-array='{{universityArray}}'></select>
-    </view>
-    <text class="sub-title-text">如果您是悠年社区成员，您居住在以下哪个社区？</text>
-    <view class="center">
-      <select prop-array='{{communityArray}}'></select>
-    </view>
-    <text class="sub-title-text">请问您如何得知本次活动</text>
-    <checkbox-group class="center input-channel">
-      <label class="sub-text channel-choice">
-        <checkbox/>悠年公寓公众号</label>
-      <label class="sub-text channel-choice">
-        <checkbox/>合作伙伴公众号</label>
-      <label class="sub-text channel-choice">
-        <checkbox/>公寓张贴海报</label>
-      <label class="sub-text channel-choice">
-        <checkbox/>朋友告诉</label>
-      <label class="sub-text channel-choice">
-        <checkbox/>其他</label>
-    </checkbox-group>
+    <form bindsubmit="formSubmit">
+      <text class="sub-title-text">姓名（或昵称）*</text>
+      <input name="_name" class="center input-name"></input>
+      <text class="sub-title-text">性别*</text>
+      <radio-group name="_gender" class="center input-gender">
+        <label class="sub-text gender-choice">
+          <radio value="男"/>男</label>
+        <label class="sub-text gender-choice">
+          <radio value="女"/>女</label>
+        <label class="sub-text gender-choice">
+          <radio value="不愿意透露或其他"/>不愿意透露或其他</label>
+      </radio-group>
+      <text class="sub-title-text">年龄*</text>
+      <radio-group name="_age" class="center input-age">
+        <label class="sub-text age-choice">
+          <radio value="21周岁以下"/>21周岁以下</label>
+        <label class="sub-text age-choice">
+          <radio value="21周岁以上"/>21周岁以上</label>
+      </radio-group>
+      <text class="sub-title-text">身份*</text>
+      <checkbox-group name="_identity" class="center input-identity">
+        <label class="sub-text identity-choice">
+          <checkbox value="悠年社区成员"/>悠年社区成员</label>
+        <label class="sub-text identity-choice">
+          <checkbox value="在校学生"/>在校学生</label>
+        <label class="sub-text identity-choice">
+          <checkbox value="上班族"/>上班族</label>
+        <label class="sub-text identity-choice">
+          <checkbox value="自由职业者"/>自由职业者</label>
+        <label class="sub-text identity-choice">
+          <checkbox value="其他"/>其他</label>
+      </checkbox-group>
+      <text class="sub-title-text">请问您就读于（或最近曾就读）于以下哪所学校？</text>
+      <view class="center">
+        <select prop-array='{{universityArray}}' bind:myget='setUniversity'></select>
+      </view>
+      <text class="sub-title-text">如果您是悠年社区成员，您居住在以下哪个社区？</text>
+      <view class="center">
+        <select prop-array='{{communityArray}}' bind:myget='setCommunity'></select>
+      </view>
+      <text class="sub-title-text">请问您如何得知本次活动</text>
+      <checkbox-group name="_channel" class="center input-channel">
+        <label class="sub-text channel-choice">
+          <checkbox value="悠年公寓公众号"/>悠年公寓公众号</label>
+        <label class="sub-text channel-choice">
+          <checkbox value="合作伙伴公众号"/>合作伙伴公众号</label>
+        <label class="sub-text channel-choice">
+          <checkbox value="公寓张贴海报"/>公寓张贴海报</label>
+        <label class="sub-text channel-choice">
+          <checkbox value="朋友告诉"/>朋友告诉</label>
+        <label class="sub-text channel-choice">
+          <checkbox value="其他"/>其他</label>
+      </checkbox-group>
+      <view class="button-view">
+        <button formType="submit" class="sign-up-button">确认报名</button>
+      </view>
+    </form>
   </view>
-</view>
-
-<view class="button-view">
-  <button class="sign-up-button">确认报名</button>
 </view>
