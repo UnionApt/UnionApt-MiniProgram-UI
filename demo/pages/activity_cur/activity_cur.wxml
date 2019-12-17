@@ -14,7 +14,6 @@
     <view class="activity-intro-background">
       <text class="activity-intro-text">{{eventDetail.intro}}</text>
     </view>
-    <image class="cur-icon" mode="widthFix" src="../../resources/images/activity/cur.png"></image>
   </view>
 
   <view class="activity-intro-container">

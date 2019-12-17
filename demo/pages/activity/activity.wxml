@@ -1,8 +1,10 @@
 <!--pages/activity/activity.wxml-->
 <view class="top-container">
   <image class="background" mode="widthFix" src="../../resources/images/banner/bannerActivity.png"></image>
-  <view class="union-icon-view">
-    <image class="union-icon" src="../../resources/images/logo/logo.png"></image>
+  <view class="top-bar">
+    <view class="union-icon-view">
+      <image class="union-icon" src="../../resources/images/logo/logo.png" catchtap="backToTop"></image>
+    </view>
   </view>
   <swiper autoplay="True" class="banner-swiper" indicator-dots="True" interval="5000" indicator-color="#C8C8C8" indicator-active-color="#979797" previous-margin='50px' next-margin='50px'>
     <swiper-item wx:for='{{curEvents}}' wx:key='this'>

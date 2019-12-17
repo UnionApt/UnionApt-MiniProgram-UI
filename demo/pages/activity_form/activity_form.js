@@ -39,10 +39,11 @@ Page({
       _name,
       _gender,
       _age,
+      _email,
       _identity,
       _channel
     } = e.detail.value;
-    if (!_name || !_gender || !_age || _identity.length == 0) {
+    if (!_name || !_gender || !_age || !_email || _identity.length == 0) {
       if (wx.pageScrollTo) {
         wx.pageScrollTo({
           scrollTop: 0
@@ -69,6 +70,7 @@ Page({
           name: _name,
           gender: _gender,
           age: _age,
+          email: _email,
           identity: _identity,
           school: this.data.university,
           community: this.data.community,

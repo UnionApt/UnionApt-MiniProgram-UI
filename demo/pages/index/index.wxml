@@ -18,7 +18,6 @@
     <swiper-item wx:for='{{activities}}' wx:key='this'>
       <view class="banner-image-container">
         <image class="banner-image" mode="aspectFill" src="{{item.image}}" />
-        <text class="banner-text">{{item.text_1}}\n{{item.text_2}}</text>
       </view>
     </swiper-item>
   </swiper>

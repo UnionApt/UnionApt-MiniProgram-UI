@@ -1,0 +1,9 @@
+<!--pages/activity_dollar/activity_dollar.wxml-->
+<view class="container">
+  <view class="img-background">
+    <image class="img" mode="widthFix" src="../../resources/images/tmp/ac-QR.png"></image>
+  </view>
+  <text class="txt">美金购票及加活动群
+请扫描二维码联系客服</text>
+  <button class="btn">回到首页</button>
+</view>

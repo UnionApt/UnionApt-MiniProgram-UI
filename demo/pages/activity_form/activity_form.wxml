@@ -6,7 +6,7 @@
 <view class="content-container">
   <view class="content-view">
     <form bindsubmit="formSubmit">
-      <text class="sub-title-text">姓名（或昵称）*</text>
+      <text class="sub-title-text">姓名（请用中文填写*</text>
       <input name="_name" class="center input-name"></input>
       <text class="sub-title-text">性别*</text>
       <radio-group name="_gender" class="center input-gender">
@@ -24,7 +24,9 @@
         <label class="sub-text age-choice">
           <radio value="21周岁以上"/>21周岁以上</label>
       </radio-group>
-      <text class="sub-title-text">身份*</text>
+      <text class="sub-title-text">您的邮箱*</text>
+      <input name="_email" class="center input-email"></input>
+      <text class="sub-title-text">您的身份*</text>
       <checkbox-group name="_identity" class="center input-identity">
         <label class="sub-text identity-choice">
           <checkbox value="悠年社区成员"/>悠年社区成员</label>
@@ -50,13 +52,13 @@
         <label class="sub-text channel-choice">
           <checkbox value="悠年公寓公众号"/>悠年公寓公众号</label>
         <label class="sub-text channel-choice">
-          <checkbox value="合作伙伴公众号"/>合作伙伴公众号</label>
+          <checkbox value="微信互动群"/>微信互动群</label>
         <label class="sub-text channel-choice">
-          <checkbox value="公寓张贴海报"/>公寓张贴海报</label>
+          <checkbox value="朋友转发朋友圈"/>朋友转发朋友圈</label>
         <label class="sub-text channel-choice">
-          <checkbox value="朋友告诉"/>朋友告诉</label>
+          <checkbox value="朋友私下告诉"/>朋友私下告诉</label>
         <label class="sub-text channel-choice">
-          <checkbox value="其他"/>其他</label>
+          <checkbox value="租客内部通知"/>租客内部通知</label>
       </checkbox-group>
       <view class="button-view">
         <button formType="submit" class="sign-up-button">确认报名</button>

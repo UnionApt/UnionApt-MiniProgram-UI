@@ -1,7 +1,0 @@
-<!--pages/activity_res/activity_res.wxml-->
-<view class="container">
-  <image class="img" mode="widthFix" src="../../resources/images/activity/success.png"></image>
-  <text class="txt">活动现场见!</text>
-  <button class="btn">探索更多</button>
-  <button class="btn">分享活动</button>
-</view>

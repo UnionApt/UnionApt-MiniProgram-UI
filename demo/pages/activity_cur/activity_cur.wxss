@@ -22,6 +22,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
+  margin-left: 30rpx;
 }
 
 .activity-intro-view {
@@ -29,10 +30,11 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .activity-intro-background {
+  width: 80%;
   box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
   border-radius: 30rpx;
   display: flex;
@@ -50,11 +52,6 @@
   margin-right: 30rpx;
   margin-top: 30rpx;
   margin-bottom: 30rpx;
-}
-
-.cur-icon {
-  height: 100%;
-  margin-left: 50rpx;
 }
 
 .activity-intro-container {
@@ -133,7 +130,6 @@
 .sign-up-button {
   width: 70%;
   border-radius: 21px;
-  background: #98afc2;
+  background: #5572c5;
   color: #ffffff;
-  box-shadow: 0px 2px4px rgba(156, 156, 156, 0.5);
 }

@@ -1,4 +1,4 @@
-// pages/activity_res/activity_res.js
+// pages/activity_dollar/activity_dollar.js
 Page({
 
   /**

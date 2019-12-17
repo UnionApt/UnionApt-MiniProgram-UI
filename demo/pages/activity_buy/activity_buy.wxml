@@ -1,0 +1,6 @@
+<!--pages/activity_buy/activity_buy.wxml-->
+<view class="container">
+  <image class="img" mode="widthFix" src="../../resources/images/activity/mascot.png"></image>
+  <button class="btn-weixin">微信支付</button>
+  <button class="btn-dollar">美金购票</button>
+</view>

@@ -56,6 +56,13 @@
   border-radius: 10px;
 }
 
+.input-email {
+  width: 100%;
+  height: 70rpx;
+  border: 1rpx solid lightgray;
+  border-radius: 10px;
+}
+
 .input-identity {
   display: flex;
   flex-direction: column;
@@ -93,7 +100,6 @@
 .sign-up-button {
   width: 50%;
   border-radius: 21px;
-  background: #98afc2;
+  background: #5572c5;
   color: #ffffff;
-  box-shadow: 0px 2px4px rgba(156, 156, 156, 0.5);
 }
