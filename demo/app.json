@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/lunch/lunch",
     "pages/index/index",
     "pages/activity/activity",
     "pages/service/service",
     "pages/activity_buy/activity_buy",
     "pages/activity_dollar/activity_dollar",
-    "pages/activity_cur/activity_cur",
     "pages/activity_pre/activity_pre",
+    "pages/activity_cur/activity_cur",
     "pages/activity_form/activity_form",
     "pages/city/city",
     "pages/detail/detail",

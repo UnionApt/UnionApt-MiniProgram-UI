@@ -1,0 +1,31 @@
+<!--pages/lunch/lunch.wxml-->
+<text class="title">悠年菜单</text>
+
+<swiper autoplay="False" class="lunch-image-swiper" next-margin='50px'>
+  <swiper-item>
+    <view class="lunch-image-box">
+      <image class="lunch-image" mode="widthFix" src="../../resources/images/tmp/dish0.png" />
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class="lunch-image-box">
+      <image class="lunch-image" mode="widthFix" src="../../resources/images/tmp/dish0.png" />
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="menu-container">
+  <image class="slash" mode="widthFix" src="../../resources/images/dinner/slash.png"></image>
+  <view class="menu-view">
+    <view class="menu-choice-view">
+      <text class="choice-text" bindtap="getOddMenu" style="color:{{btnOdd}};">单周</text>
+      <text class="choice-text" bindtap="getEvenMenu" style="color:{{btnEven}};">双周</text>
+    </view>
+    <image class="menu-img" mode="widthFix" src="{{menuImg}}"></image>
+  </view>
+</view>
+
+<view class="bottom-bar">
+  <button class="bottom-btn">订午餐</button>
+  <button class="bottom-btn">订晚餐</button>
+</view>

@@ -1,0 +1,78 @@
+/* pages/lunch/lunch.wxss */
+
+.title {
+  color: #c0c0c0;
+  font-family: "PingFangTC-Medium";
+  font-size: 31px;
+  font-weight: 400;
+  margin-left: 60rpx;
+}
+
+.lunch-image-swiper {
+  margin-left: 60rpx;
+  width: 100%;
+  height: 500rpx;
+}
+
+.lunch-image-box {
+  width: 95%;
+}
+
+.lunch-image {
+  width: 100%;
+}
+
+.bottom-bar {
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.bottom-btn {
+  background: #c46a6a;
+  color: #fff;
+  width: 49.8%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 0;
+}
+
+.bottom-btn ::after {
+  border-radius: 0;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 120rpx;
+}
+
+.menu-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70rpx;
+}
+
+.slash {
+  margin-top: 50rpx;
+  width: 5%;
+}
+
+.choice-text {
+  font-family: "PingFangSC-Medium";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-left: 30rpx;
+}
+
+.menu-img {
+  width: 100%;
+}

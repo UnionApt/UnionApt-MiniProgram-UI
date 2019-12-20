@@ -48,19 +48,6 @@
         <text class="activity-intro-subtext">{{eventDetail.price}}</text>
       </view>
     </view>
-
-    <view class="activity-intro-subview">
-      <image class="activity-intro-subview-icon" src="../../resources/images/activity/group.png"></image>
-      <view class="activity-intro-text-view">
-        <text class="activity-intro-subtitle">申请进群</text>
-      </view>
-    </view>
-  </view>
-</view>
-
-<view class="group-QR-view">
-  <view class="group-QR-border">
-    <image class="group-QR" src="{{eventDetail.qr_code}}"></image>
   </view>
 </view>
 
