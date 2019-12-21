@@ -1,17 +1,19 @@
 {
   "pages": [
-    "pages/lunch/lunch",
     "pages/index/index",
-    "pages/activity/activity",
-    "pages/service/service",
-    "pages/activity_buy/activity_buy",
-    "pages/activity_dollar/activity_dollar",
-    "pages/activity_pre/activity_pre",
-    "pages/activity_cur/activity_cur",
-    "pages/activity_form/activity_form",
     "pages/city/city",
     "pages/detail/detail",
     "pages/contact/contact",
+    "pages/activity/activity",
+    "pages/activity_pre/activity_pre",
+    "pages/activity_cur/activity_cur",
+    "pages/activity_buy/activity_buy",
+    "pages/activity_dollar/activity_dollar",
+    "pages/activity_form/activity_form",
+    "pages/service/service",
+    "pages/lunch/lunch",
+    "pages/lunch_rule/lunch_rule",
+    "pages/lunch_form/lunch_form",
     "pages/todo/todo"
   ],
   "window": {

@@ -1,0 +1,70 @@
+/* pages/lunch_form/lunch_form.wxss */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  margin-bottom: 60rpx;
+}
+
+.title {
+  color: #5e5e5e;
+  font-family: "PingFangTC-Medium";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.form-view-background {
+  width: 80%;
+}
+
+.form-view {
+  width: 100%;
+}
+
+.sub-title-text {
+  color: #5e5e5e;
+  font-family: "Microsoft YaHei";
+  font-size: 18px;
+  font-weight: 290;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+}
+
+.input-box {
+  width: 100%;
+  height: 60rpx;
+  border: 1rpx solid lightgray;
+  border-radius: 10px;
+}
+
+.center {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.bottom {
+  margin-bottom: 150rpx;
+}
+
+.bottom-btn {
+  background: #c46a6a;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  right: 0rpx;
+  left: 0rpx;
+  border-radius: 0;
+}
+
+.bottom-btn::after {
+  border-radius: 0;
+}

@@ -1,0 +1,22 @@
+<!--pages/lunch_form/lunch_form.wxml-->
+<view class="form-container">
+  <image class="banner" src="../../resources/images/dinner/banner.png" mode="widthFix"></image>
+  <text class="title">信息填写</text>
+  <view class="form-view-background">
+    <form class="form-view" bindsubmit="formSubmit">
+      <text class="sub-title-text">中文全名*</text>
+      <input name="_name" class="input-box center"></input>
+      <text class="sub-title-text">您居住于以下哪个社区?*</text>
+      <view class="center">
+        <select prop-array='{{communityArray}}' bind:myget='setCommunity'></select>
+      </view>
+      <text class="sub-title-text">房间号*</text>
+      <input name="_roomId" class="input-box center"></input>
+      <text class="sub-title-text">请填写您的邮箱*</text>
+      <input name="_email" class="input-box center"></input>
+      <text class="sub-title-text">请填写悠年用户专属产品密钥*</text>
+      <input name="_key" class="input-box center bottom"></input>
+      <button formType="submit" class="bottom-btn">确认订购</button>
+    </form>
+  </view>
+</view>

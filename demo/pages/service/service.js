@@ -8,6 +8,24 @@ Page({
 
   },
 
+  lunch: function() {
+    wx.navigateTo({
+      url: '../lunch/lunch'
+    })
+  },
+
+  clean: function () {
+    wx.navigateTo({
+      url: '../clean/clean'
+    })
+  },
+
+  fix: function () {
+    wx.navigateTo({
+      url: '../fix/fix'
+    })
+  },
+
   backToTop: function() {
     if (wx.pageScrollTo) {
       wx.pageScrollTo({

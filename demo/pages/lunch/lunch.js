@@ -14,6 +14,12 @@ Page({
     menuImg: ''
   },
 
+  reserve: function() {
+    wx.navigateTo({
+      url: '../lunch_rule/lunch_rule'
+    })
+  },
+
   getOddMenu: function() {
     this.setData({
       btnOdd: this.data.selected,

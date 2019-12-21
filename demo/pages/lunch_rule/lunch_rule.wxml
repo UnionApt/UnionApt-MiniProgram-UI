@@ -1,0 +1,14 @@
+<!--pages/lunch_rule/lunch_rule.wxml-->
+<view class="rule-container">
+  <image class="banner" src="../../resources/images/dinner/banner.png" mode="widthFix"></image>
+  <text class="title">订餐规则</text>
+  <view class="text-container">
+    <text class="rule-text">a. 午餐与晚餐需分开订购。
+          c. 每餐限量供应10份，订完为止。
+          d. 每日午餐订购截止时间为上午10:00，晚餐为下午4:00。
+          e. 订餐支出将会直接记录在您的COZY账户，连同每月房租一起计算。
+          f. 本服务目前仅向3480/3482 San Marino St社区成员提供。
+    </text>
+  </view>
+  <button class="bottom-btn">我已阅读并同意订餐条款</button>
+</view>

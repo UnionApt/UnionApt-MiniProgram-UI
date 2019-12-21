@@ -1,0 +1,48 @@
+/* pages/lunch_rule/lunch_rule.wxss */
+
+.rule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  margin-bottom: 60rpx;
+}
+
+.title {
+  color: #5e5e5e;
+  font-family: "PingFangTC-Medium";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.text-container {
+  width: 80%;
+}
+
+.rule-text {
+  color: #5e5e5e;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+  font-weight: 290;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.bottom-btn {
+  background: #c46a6a;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0rpx;
+  border-radius: 0;
+}
+
+.bottom-btn::after {
+  border-radius: 0;
+}

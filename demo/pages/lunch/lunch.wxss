@@ -62,7 +62,8 @@
 
 .slash {
   margin-top: 50rpx;
-  width: 5%;
+  width: 7%;
+  height: 800rpx;
 }
 
 .choice-text {

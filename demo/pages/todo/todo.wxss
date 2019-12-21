@@ -8,11 +8,11 @@
   margin-top: 200rpx;
 }
 
-.egg {
+/* .egg {
   width: 400rpx;
   height: 300rpx;
   margin-bottom: 100rpx;
-}
+} */
 
 .text {
   width: 400rpx;
