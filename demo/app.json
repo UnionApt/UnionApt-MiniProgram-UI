@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/clean_rule/clean_rule",
+    "pages/clean_search/clean_search",
+    "pages/clean/clean",
     "pages/index/index",
     "pages/city/city",
     "pages/detail/detail",

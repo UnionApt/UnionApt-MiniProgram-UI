@@ -1,0 +1,14 @@
+<!--pages/clean_rule/clean_rule.wxml-->
+<view class="rule-container">
+  <text class="title">预约规则</text>
+  <view class="rule-view-background">
+    <text class="rule">a. 服务期间要求本人或室友在场，以确保服务质量符合用户预期标准。
+b. 如对保洁服务有所不满，需当下与保洁人员沟通，至服务满意为止。
+c. 如对保洁服务有所不满，并与清洁人员沟通存在障碍，请附带清洁不满意处照片立即联系悠年房务人员。超过24小时发送反馈将不再予以处理。
+d. 请勿现金支付保洁人员清洁费用。
+e. 服务最终费用将被记录在COZY上连同当月房租一起计算。
+    </text>
+  </view>
+</view>
+
+<button class="bottom-btn">我已阅读并同意以上规则</button>

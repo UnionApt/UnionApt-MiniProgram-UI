@@ -1,0 +1,26 @@
+<!--pages/clean_search/clean_search.wxml-->
+<view class="search-container">
+  <text class="title">价格查询</text>
+  <view class="search-view-background">
+    <text class="question">请问您居住在以下哪个社区？</text>
+    <view class="center">
+      <select prop-array='{{communityArray}}' bind:myget='setCommunity'></select>
+    </view>
+    <text class="question">您的房型为</text>
+    <view class="center">
+      <select prop-array='{{roomTypeArray}}' bind:myget='setRoomType'></select>
+    </view>
+  </view>
+</view>
+
+<button class="bottom-btn" hidden="{{isSearch}}" catchtap="search">一键查询</button>
+
+<view class="search-res-view" hidden="{{!isSearch}}">
+  <image class="res-background" src="../../resources/images/service/resBackground.jpg"></image>
+  <text class="res-title">本次服务的价格为：</text>
+  <text class="res-price">75 USD</text>
+  <view class="res-choice-view">
+    <text class="res-back" catchtap="back">返回</text>
+    <text class="res-goon" catchtap="goon">继续</text>
+  </view>
+</view>
