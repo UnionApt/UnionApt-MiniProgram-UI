@@ -1,0 +1,23 @@
+<!--pages/fix_form/fix_form.wxml-->
+<view class="form-container">
+  <text class="title">维修申请</text>
+  <view class="form-view-background">
+    <form class="form-view" bindsubmit="formSubmit">
+      <text class="sub-title-text">中文全名*</text>
+      <input name="_name" class="input-box center"></input>
+      <text class="sub-title-text">您居住于以下哪个社区?*</text>
+      <view class="center">
+        <select prop-array='{{communityArray}}' bind:myget='setCommunity'></select>
+      </view>
+      <text class="sub-title-text">房间号*</text>
+      <input name="_roomId" class="input-box center"></input>
+      <text class="sub-title-text">请填写您的邮箱*</text>
+      <input name="_email" class="input-box center"></input>
+      <text class="sub-title-text">请填写悠年用户专属产品密钥*</text>
+      <input name="_key" class="input-box center"></input>
+      <text class="sub-title-text">请简述您遇到的问题*</text>
+      <textarea name="_remark" class="input-box center bottom"></textarea>
+      <button formType="submit" class="bottom-btn">确认预约</button>
+    </form>
+  </view>
+</view>

@@ -3,12 +3,13 @@
 }
 
 .com-sContent {
-  border: 1px solid #e2e2e2;
+  border: 1px solid lightgray;
   background: white;
   font-size: 16px;
   position: relative;
-  height: 30px;
+  height: 60rpx;
   line-height: 30px;
+  border-radius: 10px;
 }
 
 .com-sImg {
@@ -25,14 +26,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   padding: 0 20px 0 6px;
-  font-size: 14px;
+  color: #5e5e5e;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+  font-weight: 290;
+  letter-spacing: 0.9px;
+  line-height: 60rpx;
 }
 
 .com-sList {
   background: white;
   width: inherit;
   position: absolute;
-  border: 1px solid #e2e2e2;
+  border: 1px solid lightgray;
   border-top: none;
   box-sizing: border-box;
   z-index: 3;
@@ -42,14 +48,18 @@
 
 .com-sItem {
   height: 30px;
-  line-height: 30px;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid lightgray;
   padding: 0 6px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 14px;
+  color: #5e5e5e;
+  font-family: "Microsoft YaHei";
+  font-size: 15px;
+  font-weight: 290;
+  letter-spacing: 0.9px;
+  line-height: 60rpx;
 }
 
 .com-sItem:first-child {

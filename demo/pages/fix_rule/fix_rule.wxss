@@ -1,4 +1,4 @@
-/* pages/clean_rule/clean_rule.wxss */
+/* pages/fix_rule/fix_rule.wxss */
 
 .rule-container {
   display: flex;

@@ -1,9 +1,6 @@
 {
   "pages": [
-    "pages/clean_rule/clean_rule",
-    "pages/clean_search/clean_search",
-    "pages/clean/clean",
-    "pages/index/index",
+    "pages/index/index",    
     "pages/city/city",
     "pages/detail/detail",
     "pages/contact/contact",
@@ -17,6 +14,13 @@
     "pages/lunch/lunch",
     "pages/lunch_rule/lunch_rule",
     "pages/lunch_form/lunch_form",
+    "pages/clean/clean",
+    "pages/clean_search/clean_search",
+    "pages/clean_rule/clean_rule",    
+    "pages/clean_form/clean_form",
+    "pages/fix/fix",
+    "pages/fix_rule/fix_rule",
+    "pages/fix_form/fix_form",    
     "pages/todo/todo"
   ],
   "window": {

@@ -1,0 +1,19 @@
+<!--pages/fix/fix.wxml-->
+<image class="top-img" src="../../resources/images/service/fixBanner.png" mode="widthFix"></image>
+<view class="fix-container">
+  <view class="fix-background">
+    <text class="title">专属保洁</text>
+    <view class="fix-intro-background">
+      <text class="fix-intro-text">悠年公寓为您提供星级酒店级房间清扫服务。我们秉承专业精神，致力为社区成员提供最好的服务体验。
+目前我们仅接受整个房屋的保洁服务预订，单个床位预订暂不开放。</text>
+    </view>
+    <text class="sub-title">服务特色</text>
+    <view class="sub-intro-view">
+      <image class="sub-intro-img" src="../../resources/images/service/f1.png" mode="widthFix"></image>
+      <image class="sub-intro-img" src="../../resources/images/service/f2.png" mode="widthFix"></image>
+      <image class="sub-intro-img" src="../../resources/images/service/f3.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+<button class="bottom-btn">查询价格</button>

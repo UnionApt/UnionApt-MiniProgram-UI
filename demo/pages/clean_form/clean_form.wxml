@@ -1,0 +1,25 @@
+<!--pages/clean_form/clean_form.wxml-->
+<view class="form-container">
+  <text class="title">预约表格</text>
+  <view class="form-view-background">
+    <form class="form-view" bindsubmit="formSubmit">
+      <text class="sub-title-text">中文全名*</text>
+      <input name="_name" class="input-box center"></input>
+      <text class="sub-title-text">您居住于以下哪个社区?*</text>
+      <view class="center">
+        <select prop-array='{{communityArray}}' bind:myget='setCommunity'></select>
+      </view>
+      <text class="sub-title-text">房间号*</text>
+      <input name="_roomId" class="input-box center"></input>
+      <text class="sub-title-text">请填写您的邮箱*</text>
+      <input name="_email" class="input-box center"></input>
+      <text class="sub-title-text">请填写悠年用户专属产品密钥*</text>
+      <input name="_key" class="input-box center"></input>
+      <text class="sub-title-text">请选择服务的日期与时间*</text>
+      <picker class='input-box center time-picker' mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">{{startDate}}</picker>
+      <text class="sub-title-text">请备注您的具体要求*</text>
+      <textarea name="_remark" class="input-box center bottom"></textarea>
+      <button formType="submit" class="bottom-btn">确认预约</button>
+    </form>
+  </view>
+</view>
