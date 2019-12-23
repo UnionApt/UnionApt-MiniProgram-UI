@@ -11,4 +11,4 @@ e. 服务最终费用将被记录在COZY上连同当月房租一起计算。
   </view>
 </view>
 
-<button class="bottom-btn">我已阅读并同意以上规则</button>
+<button class="bottom-btn" catchtap="fillForm">我已阅读并同意以上规则</button>

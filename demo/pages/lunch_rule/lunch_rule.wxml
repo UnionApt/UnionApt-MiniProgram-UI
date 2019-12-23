@@ -10,5 +10,5 @@
           f. 本服务目前仅向3480/3482 San Marino St社区成员提供。
     </text>
   </view>
-  <button class="bottom-btn">我已阅读并同意订餐条款</button>
+  <button class="bottom-btn" catchtap="fillForm">我已阅读并同意订餐条款</button>
 </view>

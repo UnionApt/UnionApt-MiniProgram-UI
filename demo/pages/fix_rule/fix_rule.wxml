@@ -13,4 +13,4 @@ g. 维修费用将根据维修人员检查结果评判而定。如检查后鉴�
   </view>
 </view>
 
-<button class="bottom-btn">我已阅读并同意以上规则</button>
+<button class="bottom-btn" catchtap="fillForm">我已阅读并同意以上规则</button>

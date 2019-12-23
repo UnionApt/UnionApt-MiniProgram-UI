@@ -45,7 +45,9 @@ Page({
   },
 
   goon: function () {
-
+    wx.navigateTo({
+      url: '../clean_rule/clean_rule'
+    })
   },
 
   /**

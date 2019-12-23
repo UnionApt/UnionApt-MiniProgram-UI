@@ -8,6 +8,12 @@ Page({
 
   },
 
+  search: function () {
+    wx.navigateTo({
+      url: '../clean_search/clean_search'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

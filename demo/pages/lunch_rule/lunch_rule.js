@@ -8,6 +8,12 @@ Page({
 
   },
 
+  fillForm: function () {
+    wx.navigateTo({
+      url: '../lunch_form/lunch_form'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

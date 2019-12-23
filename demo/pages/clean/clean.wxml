@@ -16,4 +16,4 @@
   </view>
 </view>
 
-<button class="bottom-btn">查询价格</button>
+<button class="bottom-btn"  catchtap="search">查询价格</button>

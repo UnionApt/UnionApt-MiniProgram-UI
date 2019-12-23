@@ -8,6 +8,12 @@ Page({
 
   },
 
+  reserve: function () {
+    wx.navigateTo({
+      url: '../fix_rule/fix_rule'
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
