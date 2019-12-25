@@ -241,7 +241,7 @@ Page({
 
     if (minuteIndex == 60) {
       // 时
-      for (var i = currentHours + 1; i < 24; i++) {
+      for (var i = currentHours + 1; i >= 10 && i <= 18; i++) {
         hours.push(i);
       }
       // 分
@@ -250,7 +250,7 @@ Page({
       }
     } else {
       // 时
-      for (var i = currentHours; i < 24; i++) {
+      for (var i = currentHours; i >= 10 && i <= 18; i++) {
         hours.push(i);
       }
       // 分
@@ -262,7 +262,7 @@ Page({
 
   loadHoursMinute: function(hours, minute) {
     // 时
-    for (var i = 0; i < 24; i++) {
+    for (var i = 10; i <= 18; i++) {
       hours.push(i);
     }
     // 分
@@ -289,12 +289,12 @@ Page({
 
     if (minuteIndex == 60) {
       // 时
-      for (var i = currentHours + 1; i < 24; i++) {
+      for (var i = currentHours + 1; i >= 10 && i <= 18; i++) {
         hours.push(i);
       }
     } else {
       // 时
-      for (var i = currentHours; i < 24; i++) {
+      for (var i = currentHours; i >= 10 && i <= 18; i++) {
         hours.push(i);
       }
     }
