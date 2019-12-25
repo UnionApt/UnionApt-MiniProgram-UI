@@ -6,6 +6,10 @@
       <image class="union-icon" src="../../resources/images/logo/logo.png" catchtap="backToTop"></image>
     </view>
   </view>
+  <view class="title-view">
+    <text class="title1">悠年</text>
+    <text class="title2">专享社群</text>
+  </view>
   <swiper autoplay="True" class="banner-swiper" indicator-dots="True" interval="5000" indicator-color="#C8C8C8" indicator-active-color="#979797" previous-margin='50px' next-margin='50px'>
     <swiper-item wx:for='{{curEvents}}' wx:key='this'>
       <view class="banner-image-container">

@@ -7,7 +7,7 @@
     <text class="slogan-sub">——悠年公寓居委会</text>
   </view>
   <view class="QR-background">
-    <image class="QR" src="{{URL}}public/images/QR_Code.png"></image>
+    <image class="QR" src="{{URL}}public/images/apts/QR_Code.png"></image>
   </view>
   <text class="QR-message">预约看房或有任何疑问，\n请扫描二维码联络客服.</text>
 </view>

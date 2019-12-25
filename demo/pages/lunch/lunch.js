@@ -1,10 +1,13 @@
 // pages/lunch/lunch.js
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    URL: app.globalData.URL,
     selected: "#606060",
     notSelected: "#d8d8d8",
     menuOdd: "http://39.106.187.76:8000/public/images/services/menu_1.png",

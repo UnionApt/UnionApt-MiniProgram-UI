@@ -1,10 +1,7 @@
 <!--pages/activity_cur/activity_cur.wxml-->
 <swiper autoplay="True" class="activity-image-swiper" indicator-dots="True" interval="2000">
   <swiper-item>
-    <image class="activity-image" mode="aspectFill" src="../../resources/images/tmp/ac1.png" />
-  </swiper-item>
-  <swiper-item>
-    <image class="activity-image" mode="aspectFill" src="../../resources/images/tmp/ac2.png" />
+    <image class="activity-image" mode="aspectFill" src="{{eventDetail.cover}}" />
   </swiper-item>
 </swiper>
 

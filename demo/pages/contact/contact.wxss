@@ -25,8 +25,8 @@
 }
 
 .QR {
-  width: 400rpx;
-  height: 400rpx;
+  width: 490rpx;
+  height: 490rpx;
 }
 
 .QR-message {
