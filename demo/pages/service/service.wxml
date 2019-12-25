@@ -12,8 +12,8 @@
   <view class="service-view">
     <text class="service-title-large">服务</text>
     <text class="service-title-small">列表</text>
-    <image class="service-lunch" src="../../resources/images/tmp/lunch.png" mode="widthFix" catchtap="lunch"></image>
-    <image class="service-item" src="../../resources/images/tmp/clean.png" mode="widthFix" catchtap="clean"></image>
-    <image class="service-item" src="../../resources/images/tmp/fix.png" mode="widthFix" catchtap="fix"></image>
+    <image class="service-lunch" src="http://39.106.187.76:8000/public/images/services/wucan.png" mode="widthFix" catchtap="lunch"></image>
+    <image class="service-item" src="http://39.106.187.76:8000/public/images/services/baojie.png" mode="widthFix" catchtap="clean"></image>
+    <image class="service-item" src="http://39.106.187.76:8000/public/images/services/weixiu.png" mode="widthFix" catchtap="fix"></image>
   </view>
 </view>

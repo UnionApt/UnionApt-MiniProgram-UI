@@ -7,8 +7,8 @@ Page({
   data: {
     selected: "#606060",
     notSelected: "#d8d8d8",
-    menuOdd: "../../resources/images/dinner/odd.png",
-    menuEven: "../../resources/images/dinner/even.png",
+    menuOdd: "http://39.106.187.76:8000/public/images/services/menu_1.png",
+    menuEven: "http://39.106.187.76:8000/public/images/services/menu_2.png",
     btnOdd: '',
     btnEven: '',
     menuImg: ''
