@@ -31,6 +31,6 @@
 </view>
 
 <view class="bottom-bar">
-  <button class="bottom-btn" catchtap="reserve">订午餐</button>
-  <button class="bottom-btn" catchtap="reserve">订晚餐</button>
+  <button class="bottom-btn" catchtap="reserveLun">订午餐</button>
+  <button class="bottom-btn" catchtap="reserveDin">订晚餐</button>
 </view>

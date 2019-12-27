@@ -17,10 +17,42 @@ Page({
     menuImg: ''
   },
 
-  reserve: function() {
-    wx.navigateTo({
-      url: '../lunch_rule/lunch_rule'
-    })
+  reserveLun: function() {
+    var nowDate = new Date()
+    var beginDate = new Date()
+    var endDate = new Date()
+    beginDate.setHours(7, 0, 0, 0)
+    endDate.setHours(10, 0, 0, 0)
+    if (nowDate.getTime() - beginDate.getTime() >= 0 && nowDate.getTime() <= endDate.getTime()) {
+      wx.navigateTo({
+        url: '../lunch_rule/lunch_rule?type=lun'
+      })
+    } else {
+      wx.showToast({
+        title: '订购时间:7:00-10:00',
+        icon: 'none',
+        duration: 2000
+      })
+    }
+  },
+
+  reserveDin: function() {
+    var nowDate = new Date()
+    var beginDate = new Date()
+    var endDate = new Date()
+    beginDate.setHours(12, 0, 0, 0)
+    endDate.setHours(16, 0, 0, 0)
+    if (nowDate.getTime() - beginDate.getTime() >= 0 && nowDate.getTime() <= endDate.getTime()) {
+      wx.navigateTo({
+        url: '../lunch_rule/lunch_rule?type=lun'
+      })
+    } else {
+      wx.showToast({
+        title: '订购时间:12:00-16:00',
+        icon: 'none',
+        duration: 2000
+      })
+    }
   },
 
   getOddMenu: function() {
