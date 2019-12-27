@@ -1,4 +1,6 @@
 // pages/fix_form/fix_form.js
+const app = getApp()
+
 Page({
 
   /**
@@ -14,12 +16,12 @@ Page({
     }],
     community: '',
   },
-  
+
   setCommunity(e) {
     this.data.community = e.detail
   },
 
-  formSubmit: function (e) {
+  formSubmit: function(e) {
     console.log('维修信息提交，信息1为：', e.detail.value)
     console.log('维修信息提交，信息2为：', this.data.community)
     let {
@@ -28,19 +30,53 @@ Page({
       _email,
       _key,
       _remark,
-    } = e.detail.value
-
-    wx.showModal({
-      title: '预约成功',
-      content: '确认邮件已发送至您的邮箱',
-      showCancel: false,
-      confirmText: '返回首页',
-      success(res) {
-        if (res.confirm) {
-          console.log('返回首页')
-        }
+    } = e.detail.value;
+    if (!_name || !_roomId || !_email || !_key || !_remark || !this.data.community) {
+      wx.showToast({
+        title: '请填写全部标有*的信息',
+        icon: 'none',
+        duration: 2000
+      })
+    } else {
+      if (_key != app.globalData.KEY) {
+        wx.showToast({
+          title: '请输入正确的产品密钥',
+          icon: 'none',
+          duration: 2000
+        })
+        return
       }
-    })
+      wx.request({
+        url: app.globalData.URL + 'service/maintenanceorder/submit',
+        method: 'POST',
+        header: {
+          'content-type': 'application/json'
+        },
+        data: {
+          name: _name,
+          email: _email,
+          room: _roomId,
+          description: _remark,
+          community: this.data.community,
+        },
+        success: function(res) {
+          console.log(res) // 服务器回包信息
+          wx.showModal({
+            title: '预约成功',
+            content: '确认邮件已发送至您的邮箱',
+            showCancel: false,
+            confirmText: '返回首页',
+            success(res) {
+              if (res.confirm) {
+                wx.navigateBack({
+                  delta: 2
+                })
+              }
+            }
+          })
+        }
+      })
+    }
   },
 
   /**

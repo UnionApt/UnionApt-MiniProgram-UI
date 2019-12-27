@@ -1,7 +1,7 @@
 // pages/clean_form/clean_form.js
 const app = getApp()
-var date = new Date();
-var currentHours = date.getHours();
+var date = new Date()
+var currentHours = date.getHours()
 
 Page({
 
@@ -71,7 +71,7 @@ Page({
         success: function(res) {
           console.log(res) // 服务器回包信息
           wx.showModal({
-            title: '预定成功',
+            title: '预约成功',
             content: '确认邮件已发送至您的邮箱',
             showCancel: false,
             confirmText: '返回首页',
