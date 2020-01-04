@@ -19,7 +19,7 @@ Page({
     community: '',
     startDate: "请选择日期",
     multiArray: [
-      ['今天', '明天', '3-2', '3-3', '3-4', '3-5'],
+      ['明天', '后天', '3-2', '3-3', '3-4', '3-5'],
       [0, 1, 2, 3, 4, 5, 6],
     ],
     multiIndex: [0, 0],
@@ -147,17 +147,9 @@ Page({
   pickerTap: function() {
     date = new Date();
 
-    var monthDay = ['今天', '明天'];
+    var monthDay = ['明天', '后天'];
     var hours = [];
-    var interval = 2;
-
-    currentHours = date.getHours();
-
-    if (currentHours >= 18) {
-      monthDay = ['明天', '后天'];
-      interval = 3;
-      currentHours = 1;
-    }
+    var interval = 3;
 
     // 月-日
     for (var i = interval; i <= 10; i++) {
@@ -185,17 +177,8 @@ Page({
 
     var that = this;
 
-    var monthDay = ['今天', '明天'];
+    var monthDay = ['明天', '后天'];
     var hours = [];
-    var interval = 2;
-
-    currentHours = date.getHours();
-
-    if (currentHours >= 18) {
-      monthDay = ['明天', '后天'];
-      interval = 3;
-      currentHours = 1;
-    }
 
     var data = {
       multiArray: this.data.multiArray,
@@ -217,7 +200,7 @@ Page({
   },
 
   loadHours: function(hours) {
-    for (var i = Math.max(10, currentHours + 1); i < 18; i++) {
+    for (var i = 10; i < 18; i++) {
       hours.push(i);
     }
   },
@@ -227,11 +210,7 @@ Page({
     var monthDay = that.data.multiArray[0][e.detail.value[0]];
     var hours = that.data.multiArray[1][e.detail.value[1]];
 
-    if (monthDay === "今天") {
-      var month = date.getMonth() + 1;
-      var day = date.getDate();
-      monthDay = month + "月" + day + "日";
-    } else if (monthDay === "明天") {
+    if (monthDay === "明天") {
       var date1 = new Date(date);
       date1.setDate(date.getDate() + 1);
       monthDay = (date1.getMonth() + 1) + "月" + date1.getDate() + "日";

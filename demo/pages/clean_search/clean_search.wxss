@@ -41,6 +41,8 @@
   background: #c46a6a;
   color: #fff;
   width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
   position: fixed;
   bottom: 0rpx;
   border-radius: 0;

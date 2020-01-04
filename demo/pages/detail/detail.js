@@ -17,6 +17,21 @@ Page({
     })
   },
 
+  askDownload: function() {
+    var that = this
+    //交互框
+    wx.showModal({
+      content: '房源海报将下载至手机相册',
+      showCancel: true,
+      confirmText: '开始下载',
+      success(res) {
+        if (res.confirm) {
+          that.download()
+        }
+      }
+    })
+  },
+
   download: function() {
     //获取相册授权
     wx.getSetting({

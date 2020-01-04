@@ -48,6 +48,6 @@
   </view>
 </view>
 
-<image class="share" src="../../resources/images/suspension/share.png" catchtap="download"></image>
+<image class="share" src="../../resources/images/suspension/share.png" catchtap="askDownload"></image>
 
 <image class="contact" src="../../resources/images/suspension/contact.png" catchtap="contact"></image>

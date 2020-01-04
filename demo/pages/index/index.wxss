@@ -83,6 +83,7 @@ swiper-item {
 }
 
 .house-list-title {
+  margin-top: 20rpx;
   display: flex;
   flex-direction: row;
 }
@@ -103,9 +104,9 @@ swiper-item {
 }
 
 .location {
-  color: #bababa;
+  color: #5c5c5c;
   font-family: "PingFangSC-Medium";
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 23px;
   margin-left: 10rpx;
@@ -113,7 +114,7 @@ swiper-item {
 
 .view-more {
   font-family: "PingFangSC-Medium";
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #a0a0a0;
 }
@@ -124,7 +125,7 @@ swiper-item {
   margin-bottom: 25rpx;
   border-radius: 30rpx;
   opacity: 0.75;
-  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
+  box-shadow: 0px 2px 4px rgba(150,150,150,0.5);
 }
 
 .house-text-location {
@@ -215,9 +216,9 @@ swiper-item {
 }
 
 .news {
-  color: #bababa;
+  color: #5c5c5c;
   font-family: "PingFangSC-Medium";
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 23px;
   margin-left: 10rpx;
@@ -253,8 +254,8 @@ swiper-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
   border-radius: 10rpx;
+  box-shadow: 0px 2px 4px rgba(150,150,150,0.5);
 }
 
 .news-img {
