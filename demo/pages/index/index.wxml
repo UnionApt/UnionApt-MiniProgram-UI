@@ -35,7 +35,7 @@
 <scroll-view class="house-scroll-view" scroll-x="true">
   <view class="house-image-container" wx:for='{{apartments}}' wx:key='this'>
     <view class="house-image-view" catchtap="viewApartmentDetail" data-_id='{{item._id}}'>
-      <image class="house-image" mode="aspectFill" src="{{item.image}}" />
+      <image class="house-image" mode="widthFix" src="{{item.image}}" />
       <text class="house-text-location">{{item.subregion}}</text>
       <text class="house-text-type-price">{{item.min_price}} USD/月 起</text>
     </view>
