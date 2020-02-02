@@ -79,11 +79,28 @@ Page({
     }
   },
 
+  getCommunity: function () {
+    var myThis = this
+    wx.request({
+      url: app.globalData.URL + 'getRegionList',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res) // 服务器回包信息
+        myThis.setData({
+          communityArray: res.data
+        })
+      }
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.getCommunity()
   },
 
   /**

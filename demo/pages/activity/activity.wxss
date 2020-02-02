@@ -45,8 +45,8 @@
 .banner-image-container {
   height: 95%;
   width: 85%;
-  text-align: right;
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -59,13 +59,8 @@
   box-shadow: 0px 2px 4px rgba(150,150,150,0.5);
 }
 
-.banner-text-sign-up {
-  color: #363434;
-  font-family: "PingFangSC-Medium";
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: right;
+.banner-image-sign-up {
+  width: 300rpx;
   margin-bottom: 10rpx;
 }
 

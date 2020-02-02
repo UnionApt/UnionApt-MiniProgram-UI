@@ -14,7 +14,7 @@
     <swiper-item wx:for='{{curEvents}}' wx:key='this'>
       <view class="banner-image-container">
         <image class="banner-image" mode="aspectFill" src="{{item.poster}}" catchtap="viewCurEventDetail" data-_id='{{item._id}}' />
-        <text class="banner-text-sign-up" catchtap="viewCurEventDetail" data-_id='{{item._id}}'>点击报名</text>
+        <image class="banner-image-sign-up" catchtap="viewCurEventDetail" data-_id='{{item._id}}' src="../../resources/images/activity/signup.png" mode="widthFix"></image>
         <text class="banner-text-intro">{{item.title}}</text>
       </view>
     </swiper-item>

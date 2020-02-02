@@ -1,3 +1,4 @@
+const app = getApp()
 // pages/clean_search/clean_search.js
 Page({
 
@@ -5,21 +6,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    price: '',
     isSearch: false,
     communityArray: [{
       "text": "A"
-    }, {
-      "text": "B"
-    }, {
-      "text": "C"
     }],
     community: '',
     roomTypeArray: [{
-      "text": "E"
+      "text": "Studio"
     }, {
-      "text": "F"
+      "text": "1B1B"
     }, {
-      "text": "G"
+      "text": "2B1B"
+    }, {
+      "text": "2B2B"
+    }, {
+      "text": "3B2B"
     }],
     roomType: ''
   },
@@ -33,9 +35,37 @@ Page({
   },
 
   search: function() {
-    this.setData({
-      isSearch: true
-    })
+    var myThis = this
+    if (this.data.community == '' || this.data.roomType == '') {
+      wx.showToast({
+        title: '请选择社区和房型',
+        icon: 'none',
+        duration: 2000
+      })
+    } else {
+      wx.request({
+        url: app.globalData.URL + 'getCleaningPrice?location=' + this.data.community + '&layout=' + this.data.roomType,
+        method: 'GET',
+        header: {
+          'content-type': 'application/json'
+        },
+        success: function(res) {
+          console.log(res) // 服务器回包信息
+          if (res.statusCode == 200) {
+            myThis.setData({
+              price: res.data[0][myThis.data.roomType],
+              isSearch: true
+            })
+          } else {
+            wx.showToast({
+              title: '查询的房型不存在',
+              icon: 'none',
+              duration: 2000
+            })
+          }
+        }
+      })
+    }
   },
 
   back: function() {
@@ -44,9 +74,26 @@ Page({
     })
   },
 
-  goon: function () {
+  goon: function() {
     wx.navigateTo({
       url: '../clean_rule/clean_rule'
+    })
+  },
+
+  getCommunity: function() {
+    var myThis = this
+    wx.request({
+      url: app.globalData.URL + 'getRegionList',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res) // 服务器回包信息
+        myThis.setData({
+          communityArray: res.data
+        })
+      }
     })
   },
 
@@ -54,7 +101,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.getCommunity()
   },
 
   /**

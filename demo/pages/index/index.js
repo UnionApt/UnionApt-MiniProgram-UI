@@ -13,9 +13,9 @@ Page({
   },
 
   selectRegion: function () {
-    wx.navigateTo({
-      url: '../city/city',
-    })
+    // wx.navigateTo({
+    //   url: '../city/city',
+    // })
   },
 
   backToTop: function() {
