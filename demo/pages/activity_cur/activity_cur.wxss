@@ -30,12 +30,12 @@
   margin-top: 50rpx;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .activity-intro-background {
-  width: 100%;
+  width: 85%;
   border-radius: 30rpx;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@
   color: #5a5a5a;
   font-family: "Microsoft YaHei";
   font-size: 14px;
-  font-weight: 290;
+  font-weight: 500;
   line-height: 21px;
   margin-left: 30rpx;
   margin-right: 30rpx;
@@ -56,7 +56,7 @@
 }
 
 .activity-intro-container {
-  margin-left: 30rpx;
+  margin-left: 50rpx;
   margin-top: 50rpx;
   margin-bottom: 50rpx;
 }
@@ -68,9 +68,10 @@
 }
 
 .activity-intro-subview-icon {
-  width: 62rpx;
-  height: 55rpx;
+  width: 48rpx;
+  height: 43rpx;
   margin-right: 20rpx;
+  margin-top:10rpx;
 }
 
 .activity-intro-text-view {
@@ -80,7 +81,7 @@
 }
 
 .activity-intro-subtitle {
-  color: #969696;
+  color: #696969;
   font-family: "PingFangSC-Medium";
   font-size: 16px;
   font-weight: 400;
@@ -93,24 +94,33 @@
   color: #484848;
   font-family: "Microsoft YaHei";
   font-size: 14px;
-  font-weight: 290;
+  font-weight: 400;
   line-height: 21px;
   margin-top: 20rpx;
 }
 
 .button-view {
   margin-top: 50rpx;
-  margin-bottom: 50rpx;
+  margin-bottom: 150rpx;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sign-up-button {
-  width: 70%;
-  border-radius: 21px;
-  background: #5572c5;
+.bottom-btn {
+  background: #5572C5;
   color: #fff;
-  margin-bottom: 50rpx;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0rpx;
+  right: 0rpx;
+  left: 0rpx;
+  border-radius: 0;
+}
+
+.bottom-btn::after {
+  border-radius: 0;
 }

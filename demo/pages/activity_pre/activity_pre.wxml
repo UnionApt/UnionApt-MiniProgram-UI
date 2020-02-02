@@ -53,7 +53,7 @@
       </view>
     </view>
 
-    <swiper autoplay="False" class="pre-activity-image-swiper" next-margin='50px'>
+    <swiper autoplay="False" class="pre-activity-image-swiper" next-margin='100px'>
       <swiper-item wx:for='{{eventDetail.slides}}' wx:key='this'>
         <view class="pre-activity-image-box">
           <image class="pre-activity-image" mode="aspectFill" src="{{item}}" />

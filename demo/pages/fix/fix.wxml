@@ -6,7 +6,6 @@
     <view class="fix-intro-background">
       <text class="fix-intro-text">从您入住起，悠年公寓的服务人员即为您提供专业维修。我们的维修人员会在您报修后24小时内处理您的申请，尽快为您安排维修服务，让您的难题及时得到解决。</text>
     </view>
-    <text class="sub-title">服务特色</text>
     <view class="sub-intro-view">
       <image class="sub-intro-img" src="../../resources/images/service/f1.png" mode="widthFix"></image>
       <image class="sub-intro-img" src="../../resources/images/service/f2.png" mode="widthFix"></image>

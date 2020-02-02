@@ -5,6 +5,7 @@
   font-family: "PingFangTC-Medium";
   font-size: 31px;
   font-weight: 400;
+  letter-spacing: 5rpx;
   margin-left: 60rpx;
 }
 

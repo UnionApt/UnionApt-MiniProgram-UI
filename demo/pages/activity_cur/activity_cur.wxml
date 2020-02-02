@@ -49,5 +49,5 @@
 </view>
 
 <view class="button-view">
-  <button class="sign-up-button" catchtap="signUp">我要报名</button>
+  <button class="bottom-btn" catchtap="signUp">我要报名</button>
 </view>

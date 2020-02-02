@@ -105,7 +105,7 @@ swiper-item {
 }
 
 .pre-view-title-img1 {
-  width: 30rpx;
+  width: 25rpx;
   height: 30rpx;
 }
 

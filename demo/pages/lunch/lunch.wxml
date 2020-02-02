@@ -7,16 +7,6 @@
       <image class="lunch-image" mode="widthFix" src="{{URL}}public/images/services/dish_temp.png" />
     </view>
   </swiper-item>
-  <swiper-item>
-    <view class="lunch-image-box">
-      <image class="lunch-image" mode="widthFix" src="{{URL}}public/images/services/dish_temp.png" />
-    </view>
-  </swiper-item>
-  <swiper-item>
-    <view class="lunch-image-box">
-      <image class="lunch-image" mode="widthFix" src="{{URL}}public/images/services/dish_temp.png" />
-    </view>
-  </swiper-item>
 </swiper>
 
 <view class="menu-container">
