@@ -19,28 +19,20 @@
 .title {
   color: #363636;
   font-family: "PingFangSC-Medium";
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 500;
   line-height: 30px;
-}
-
-.sub-title {
-  color: #363636;
-  font-family: "Microsoft YaHei";
-  font-size: 18px;
-  font-weight: 290;
-  line-height: 24px;
 }
 
 .clean-intro-background {
   width: 100%;
-  box-shadow: 0px 2px 3px 2px rgba(150, 150, 150, 0.5);
+  box-shadow: 0px 2px 4px rgba(150,150,150,0.5);
   border-radius: 30rpx;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50rpx;
-  margin-bottom: 50rpx;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
 }
 
 .clean-intro-text {
@@ -48,7 +40,7 @@
   font-family: "Microsoft YaHei";
   font-size: 16px;
   font-weight: 290;
-  line-height: 21px;
+  line-height: 26px;
   margin-left: 30rpx;
   margin-right: 30rpx;
   margin-top: 30rpx;
